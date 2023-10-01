@@ -5,8 +5,8 @@ x = ":buffer-close"
 j = "jump_backward"
 k = "jump_forward"
 
-# [keys.normal.space]
-# l = ":toggle lsp.display-inlay-hints"
+[keys.normal.space]
+l = ":toggle lsp.display-inlay-hints"
 
 [keys.normal."["]
 "[" = "goto_previous_buffer"
