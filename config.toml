@@ -1,0 +1,47 @@
+theme = "catppuccin_mocha"
+
+[keys.normal.g]
+x = ":buffer-close"
+j = "jump_backward"
+k = "jump_forward"
+
+# [keys.normal.space]
+# l = ":toggle lsp.display-inlay-hints"
+
+[keys.normal."["]
+"[" = "goto_previous_buffer"
+
+[keys.normal."]"]
+"]" = "goto_next_buffer" 
+
+[editor]
+line-number = "relative"  
+cursorline = true
+bufferline = "always"
+shell = ["zsh", "-c"]
+scrolloff = 10
+color-modes = true
+gutters = ["diff", "diagnostics", "line-numbers", "spacer", "spacer"]
+completion-trigger-len = 1
+
+[editor.soft-wrap]
+enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spacer", "diagnostics", "workspace-diagnostics", "spinner", "version-control"]
+right = ["file-name", "spacer", "file-type", "position-percentage", "spacer"]
+
+[editor.lsp]
+auto-signature-help = true
+
+[editor.indent-guides]
+render = true
+
