@@ -7,6 +7,7 @@ k = "jump_forward"
 
 [keys.normal.space]
 l = ":toggle lsp.display-inlay-hints"
+x = ":bc" # Close current buffer
 
 [keys.normal."["]
 "[" = "goto_previous_buffer"
