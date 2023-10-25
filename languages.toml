@@ -12,6 +12,7 @@ formatter = { command = 'prettier', args = ["--parser", "css"] }
 
 [[language]]
 name = "typescript"
+language-server = {command = "vscode-eslint-language-server"}
 formatter = { command = "prettier" }
 auto-format = true
 
