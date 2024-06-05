@@ -1,5 +1,9 @@
 theme = "catppuccin_mocha"
 
+[keys.normal]
+# select word under cursor, set search to selection, add new selection at next occurrence 
+"C-d" = ["move_prev_word_start", "move_next_word_end", "search_selection", "extend_search_next"]
+
 [keys.normal.g]
 x = ":buffer-close"
 j = "jump_backward"

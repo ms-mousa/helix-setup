@@ -1,14 +1,18 @@
 [[language]]
 name = "html"
 formatter = { command = 'prettier', args = ["--parser", "html"] }
+file-types = ["html", "htm", "shtml", "xhtml", "xht", "jsp", "asp", "aspx", "jshtm", "volt", "rhtml", "edge"]
+auto-format = true
 
 [[language]]
 name = "json"
 formatter = { command = 'prettier', args = ["--parser", "json"] }
+auto-format = true
 
 [[language]]
 name = "css"
 formatter = { command = 'prettier', args = ["--parser", "css"] }
+auto-format = true
 
 [[language]]
 name = "javascript"
@@ -42,19 +46,19 @@ auto-format = true
 
 [[language]]
 name = "python"
-language-server = { command = "pylsp" }
+# language-server = { command = "pylsp" }
 formatter = { command = "black", args = ["--quiet", "-"] }
 auto-format = true
 
-[language.config.pylsp.plugins]
-pyflakes = { enabled = false }
-mccabe = { enabled = false }
-pyls_isort = { enabled = false }
-pycodestyle = { enabled = false, maxLineLength = 88 }
-pydocstyle = { enabled = false }
-autopep8 = { enabled = false }
-yapf = { enabled = false }
-flake8 = { enabled = false }
-pylint = { enabled = false }
-ruff = { enabled = true, extendSelect = ["I"] }
-mypy = { enabled = true, live_mode = true, strict = true }
+# [language.config.pylsp.plugins]
+# pyflakes = { enabled = false }
+# mccabe = { enabled = false }
+# pyls_isort = { enabled = false }
+# pycodestyle = { enabled = false, maxLineLength = 88 }
+# pydocstyle = { enabled = false }
+# autopep8 = { enabled = false }
+# yapf = { enabled = false }
+# flake8 = { enabled = false }
+# pylint = { enabled = false }
+# ruff = { enabled = true, extendSelect = ["I"] }
+# mypy = { enabled = true, live_mode = true, strict = true }
